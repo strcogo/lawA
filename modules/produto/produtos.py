@@ -9,7 +9,6 @@ def index():
     p = Produto.query.all()
     return render_template("produto.html", dados=p)
 
-
 @bp_produtos.route("/add")
 def add():
     p = Produto.query.all()
