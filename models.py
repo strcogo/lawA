@@ -20,7 +20,7 @@ class Produto(db.Model):
     __tablename__ = 'tb_produto'
     id = db.Column(db.Integer, primary_key=True)
     nm_produto = db.Column(db.String(100))
-    preco = db.Column(db.Decimal(10,2))
+    preco = db.Column(db.Float(10,2))
     id_fornecedor = db.Column(db.Integer, db.ForeignKey('tb_fornecedor.id'))
 
     fornecedor = db.relationship('Fornecedor', foreign_keys=id_fornecedor)

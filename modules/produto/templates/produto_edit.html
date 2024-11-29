@@ -19,14 +19,14 @@
             </div>
             <div>
                 <label for="preco">Preco: </label>
-                <input type="text" name="preco" id="preco">
+                <input type="number" name="preco" id="preco">
             </div>
             <div>
                 <label for="fornecedor">Fornecedor: </label>
                 <select name="id_fornecedor" id="fornecedor">
                     <option value=""></option>
-                    {% for p in fornecedores %}
-                    <option value="{{p.id}}">{{p.nome}}</option>
+                    {% for f in fornecedores %}
+                    <option value="{{p.id}}">{{f.nome}}</option>
                     {% endfor %}
                 </select>
             </div>
